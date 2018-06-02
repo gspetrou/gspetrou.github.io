@@ -1,0 +1,102 @@
+/* Changes to a couple default style tags */
+body {
+	color: #526066;
+}
+
+h2, h3 {
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+.l-box {
+	padding: 1em;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+.roundedImage {
+	border-radius: 50%;
+}
+
+
+/* Changes to the nav bar */
+.pure-menu {
+	box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+
+.pure-menu-link {
+	padding: .5em .7em;
+}
+
+
+/* Banner Styling */
+.bgImage {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.splash-containner {
+	background-image: url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg'); /* Change me later! */
+	height: 96.5vh;
+}
+
+.splash {
+	margin: auto;
+	padding: 200px 0;	/* How far down we should put the splash text */
+	text-align: center;
+	color: white;
+	/*text-shadow: 0 1px 1px black;*/
+}
+
+.splash-head {
+	font-size: 3em;
+	font-weight: 500;
+	padding: 15px;
+
+	width: auto;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 3px solid white;
+}
+
+.splash-subhead {
+	font-size: 1em;
+}
+
+/* Who Am I section */
+.whoAmI {
+	width: 60%;
+	margin: 0 auto;
+	border: 3px solid red;
+}
+
+.whoAmI-head {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.whoAmI-body {
+	display: flex;
+}
+
+.whoAmI-imgbox {
+
+}
+
+.whoAmI-img {
+	float: right
+}
+
+.whoAmI-bio {
+	padding-left: 15px;
+}
