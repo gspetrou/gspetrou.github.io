@@ -1,102 +1,102 @@
-/* Changes to a couple default style tags */
-body {
-	color: #526066;
-}
-
-h2, h3 {
-	letter-spacing: 0.25em;
-	text-transform: uppercase;
-	font-weight: 600;
-}
-
-p {
-	line-height: 1.6em;
-}
-
-.l-box {
-	padding: 1em;
-}
-
-
+/* General CSS */
 * {
 	box-sizing: border-box;
 }
 
-.roundedImage {
-	border-radius: 50%;
+body {
+	background-color: gray;
 }
 
-
-/* Changes to the nav bar */
-.pure-menu {
-	box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+.whiteBackground {
+	background-color: white;
+	border-radius: 5px
 }
 
-.pure-menu-link {
-	padding: .5em .7em;
+.blackBackground {
+	background-color: black;
+	border-radius: 5px
 }
 
-
-/* Banner Styling */
-.bgImage {
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.splash-containner {
-	background-image: url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg'); /* Change me later! */
-	height: 96.5vh;
-}
-
-.splash {
-	margin: auto;
-	padding: 200px 0;	/* How far down we should put the splash text */
-	text-align: center;
+/* Nav */
+.navLink {
 	color: white;
-	/*text-shadow: 0 1px 1px black;*/
 }
 
-.splash-head {
-	font-size: 3em;
-	font-weight: 500;
-	padding: 15px;
+/* Top Area */
+.mainInfo-Container {
+	background-color: black;
+	height: 100vh;
+	overflow: auto;
 
-	width: auto;
-	margin: 0 auto;
-	border-radius: 5px;
-	border: 3px solid white;
+	background-image: url(content/placeholder.png);
+	background-position: 85% 25%;
+	background-repeat: no-repeat;
 }
 
-.splash-subhead {
+.mainInfo-TextArea {
+	width: 100%;
+	margin-top: 8vh;
+	padding-left: 7.5%;
+	position: fixed;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.mainInfo-Name {
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-size: 4em;
+}
+
+.mainInfo-List {
+	padding: 0;
+	line-height: 1.5em;
+	list-style-type: none;
+	position: relative;
+}
+
+.mainInfo-ListLine:before {
+	color: white;
+	content: "— ";
+	text-indent: -5px;
+}
+
+.mainInfo-ListLine {
+	color: white;
 	font-size: 1em;
+	font-weight: 500;
 }
 
-/* Who Am I section */
-.whoAmI {
-	width: 60%;
-	margin: 0 auto;
-	border: 3px solid red;
+/* Portfolio */
+.portfolio-Container {
+	background-color: white;
 }
 
-.whoAmI-head {
+.portfolio-Header {
 	text-align: center;
-	margin-bottom: 0;
+	margin: 0;
+	padding: .8em;
+	font-size: 2.5em;
+	color: white;
 }
 
-.whoAmI-body {
-	display: flex;
+.portfolio-Desc {
+	text-align: center;
+	margin: 0;
+	padding-bottom: 10px;
 }
 
-.whoAmI-imgbox {
-
+.portfolio-MoreProjects {
+	margin: 0 auto;
+	width: auto;
+	height: 100%;
+	text-align: center;
 }
 
-.whoAmI-img {
-	float: right
-}
-
-.whoAmI-bio {
-	padding-left: 15px;
+.portfolio-Img {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60px;
 }
