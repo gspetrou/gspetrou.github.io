@@ -37,7 +37,8 @@ body {
 	width: 100%;
 	margin-top: 8vh;
 	padding-left: 7.5%;
-	position: fixed;
+	/*position: fixed;*/
+	position: relative;
 	overflow: hidden;
 	z-index: 0;
 }
@@ -84,6 +85,40 @@ body {
 	padding: .8em;
 	font-size: 2.5em;
 	color: white;
+}
+
+.testC {
+	width: 100%;
+	margin: auto;
+}
+
+.portfolio-Project {
+	padding: 0 10px 10px 10px;
+}
+
+.portfolio-ProjPadding {
+	padding: 10px;
+	background-color: #fafafa;
+	border-radius: 2px;
+	border: 1px solid #eeeeee;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.portfolio-ProjImgContainer {
+	max-height: 300px;
+}
+
+.portfolio-ProjImg {
+	max-height: 300px;
+}
+
+.portfolio-ProjText {
+	padding-left: 10px;
+}
+
+.portfolio-ProjHeader {
+	margin: 0;
 }
 
 .portfolio-Desc {
