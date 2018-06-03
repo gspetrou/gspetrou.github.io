@@ -56,6 +56,11 @@ body {
 	position: relative;
 }
 
+.mainInfo-List a {
+	color: orange;
+	text-decoration: none;
+}
+
 .mainInfo-ListLine:before {
 	color: white;
 	content: "— ";
