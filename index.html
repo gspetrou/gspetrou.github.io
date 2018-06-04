@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 	<link rel="stylesheet" href="https://use.typekit.net/osn5qmp.css">
 	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -42,10 +43,17 @@
 				<li class="mainInfo-ListLine">I've been to Cyprus about 12 times, oh and I know Greek.</li>
 				<li class="mainInfo-ListLine">I've made this <a href="George Petrou - Resume.pdf" target="_blank">résumé</a>, why don't you take a look?</li>
 				<li class="mainInfo-ListLine">I want to be one of the best computer dudes out there.</li>
-				<li class="mainInfo-ListLine">I want to work in an enviornment that can help me achieve this.</li>
+				<li class="mainInfo-ListLine">I want to work in an environment that can help me achieve this.</li>
 				<li class="mainInfo-ListLine">♫ I want to be the very best, that no-one ever was! ♫</li>
 			</ul>
 		</div>
+
+		<a href="#portfolio" class="mainInfo-ScrollClickable">
+			<div class="mainInfo-Scroll">
+				<span class="fadeOnScroll mainInfo-ScrollText">Scroll for more info</span>
+				<div class="fadeOnScroll bounce"><i class="mainInfo-ScrollArrow fas fa-angle-down fa-5x" aria-hidden="true"></i></div>
+			</div>
+		</a>
 	</div>
 
 	<div id="portfolio" class="portfolio-Container">
@@ -61,7 +69,7 @@
 						<p>The classic game Trouble in Terrorist Town rewritten from the ground up with high performance and modularity in mind.</p>
 						<ul>
 							<li>Supports 128 player matches with ease.</li>
-							<li>Well documented, to be a lasting replacement of the original.</li>
+							<li>Well documented to be a lasting replacement of the original.</li>
 							<li>Built on a robust and modular framework to catch potential bugs.</li>
 							<li>Easily extendable with support for hotloading new features on the fly.</li>
 						</ul>
@@ -105,7 +113,7 @@
 						<ul>
 							<li>Can intelligently "smart select" nearby items that you may want to weld together.</li>
 							<li>Supports an infinite number of weldable props through a grouped weld system.</li>
-							<li>compatible with all major player permissions frameworks.</li>
+							<li>Compatible with all major player permissions frameworks.</li>
 							<li>Used concurrently by a quarter million clients!</li>
 						</ul>
 
@@ -164,6 +172,36 @@
 
 	<script>
 		var scroll = new SmoothScroll('a[href*="#"]');	// Enables smooth scrolling.
+
+		// Scroll down for more info section.
+		var disableOpacity = 0.15;	// Opacity at which we can no longer press the down arrow.
+		var fadeInAfterTime = 2000;	// Time in ms to fade the arrow in after.
+		var fadInTime = 2000;		// Time in ms of how long it takes to fade in the arrow.
+
+		// Makes it so that once the opactity of the down arrow is below disableOpacity we disable clicking it.
+		$(window).scroll(function(){
+			var newOpacity = 1 - $(window).scrollTop() / 500;
+			$(".fadeOnScroll").css("opacity", newOpacity);
+
+			var clickableScroll = $(".mainInfo-ScrollClickable");
+
+			if (newOpacity <= disableOpacity) {
+				if (clickableScroll.css("pointer-events") !== "none") {
+					clickableScroll.css("pointer-events", "none");
+				}
+			}
+			else {
+				if (clickableScroll.css("pointer-events") !== "auto") {
+					clickableScroll.css("pointer-events", "auto");
+				}
+			}
+		});
+
+		// Don't fade in the down arrow till after fadeInAfterTime seconds. Then take fadInTime long to fade it in.
+		$(".mainInfo-Scroll").hide();
+		setTimeout(function() {
+			$(".mainInfo-Scroll").fadeIn(fadInTime);
+		}, fadeInAfterTime);
 	</script>
 </div>
 </body>
