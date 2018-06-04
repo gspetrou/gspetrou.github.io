@@ -18,6 +18,10 @@ body {
 }
 
 /* Nav */
+.navMenu {
+	background-color: black;
+}
+
 .navLink {
 	color: white;
 }
@@ -35,7 +39,7 @@ body {
 
 .mainInfo-TextArea {
 	width: 100%;
-	margin-top: 8vh;
+	margin-top: 5vh;
 	padding-left: 7.5%;
 	/*position: fixed;*/
 	position: relative;
@@ -103,6 +107,7 @@ body {
 	border: 1px solid #eeeeee;
 	max-width: 1000px;
 	margin: 0 auto;
+	height:100%;
 }
 
 .portfolio-ProjImgContainer {
@@ -115,6 +120,12 @@ body {
 
 .portfolio-ProjText {
 	padding-left: 10px;
+	position: relative;
+}
+
+.portfolio-projButtons {
+	position: absolute;
+	bottom: 0;
 }
 
 .portfolio-ProjHeader {
@@ -132,6 +143,7 @@ body {
 	width: auto;
 	height: 100%;
 	text-align: center;
+	padding-bottom: 20px;
 }
 
 .portfolio-Img {
@@ -139,4 +151,76 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	height: 60px;
+}
+
+/* Contact Section */
+.contact-Container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.contact-Info {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.contact-Info ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.contact-NameContainer {
+	padding-right: 5px;
+}
+
+.contact-Name {
+	width: 100%;
+}
+
+.contact-EmailContainer {
+	padding-left: 5px;
+}
+
+.contact-Email {
+	width: 100%;
+}
+
+.contact-Message {
+	width: 100%;
+}
+
+.contact-Submit {
+	background-color: black;
+	margin-top: 5px;
+}
+
+/* Don't anchor project download links to bottom of project card on smaller screens */
+@media only screen and (max-width: 1730px) {
+	.portfolio-projButtons {
+		position: relative;
+	}
+}
+
+/* Small size in Pure, make portfolio section look good on small screens */
+@media only screen and (max-width: 568px) {
+	.portfolio-ProjImg {
+		margin: 0 auto;
+		border: 1px solid red;
+	}
+
+	.portfolio-ProjHeader {
+		margin: 0;
+		padding-top: 10px;
+	}
+}
+
+/* Medium size in Pure, make contact text entries look nice. */
+@media only screen and (max-width: 768px) {
+	.contact-NameContainer {
+		padding-right: 0;
+	}
+
+	.contact-EmailContainer {
+		padding-left: 0;
+	}
 }

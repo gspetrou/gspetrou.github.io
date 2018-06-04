@@ -9,21 +9,22 @@
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 	<link rel="stylesheet" href="https://use.typekit.net/osn5qmp.css">
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav>
-		<div class="pure-menu pure-menu-horizontal pure-menu-fixed">
+	<!--<nav>
+		<div class="navMenu pure-menu pure-menu-horizontal pure-menu-fixed">
 			<ul class="pure-menu-list">
-				<li class="pure-menu-item"><a href="#" class="navLink pure-menu-link pure-menu-selected">Home</a></li>
-				<li class="pure-menu-item"><a href="#" class="navLink pure-menu-link">Portfolio</a></li>
-				<li class="pure-menu-item"><a href="#" class="navLink pure-menu-link">Contact</a></li>
+				<li class="pure-menu-item"><a data-scroll href="#home" class="navLink pure-menu-link pure-menu-selected">Home</a></li>
+				<li class="pure-menu-item"><a data-scroll href="#portfolio" class="navLink pure-menu-link">Portfolio</a></li>
+				<li class="pure-menu-item"><a data-scroll href="#contact" class="navLink pure-menu-link">Contact</a></li>
 			</ul>
 		</div>
-	</nav>
+	</nav>-->
 
-	<div class="mainInfo-Container">
+	<div id="home" class="mainInfo-Container">
 		<div class="mainInfo-TextArea">
 			<h1 class="mainInfo-Name tk-museo-sans-rounded"><span class="whiteBackground">George Petrou</span></h1>
 
@@ -38,15 +39,16 @@
 				<li class="mainInfo-ListLine">I'm out of phrases that start with I'm, lets switch it up.</li>
 				<li class="mainInfo-ListLine">I've showcased some stuff in the portfolio section, <a href="https://github.com/gspetrou" target="_blank">more on my Github</a>.</li>
 				<li class="mainInfo-ListLine">I've made and sold videogame addons under the alias 'Stalker'.</li>
-				<li class="mainInfo-ListLine">I've been to Cyprus about 12 times, oh and know Greek.</li>
+				<li class="mainInfo-ListLine">I've been to Cyprus about 12 times, oh and I know Greek.</li>
+				<li class="mainInfo-ListLine">I've made this <a href="George Petrou - Resume.pdf" target="_blank">résumé</a>, why don't you take a look?</li>
 				<li class="mainInfo-ListLine">I want to be one of the best computer dudes out there.</li>
-				<li class="mainInfo-ListLine">I want to work in an enviornment that can help me do this.</li>
+				<li class="mainInfo-ListLine">I want to work in an enviornment that can help me achieve this.</li>
 				<li class="mainInfo-ListLine">♫ I want to be the very best, that no-one ever was! ♫</li>
 			</ul>
 		</div>
 	</div>
 
-	<div class="portfolio-Container">
+	<div id="portfolio" class="portfolio-Container">
 		<h2 class="portfolio-Header tk-museo-sans-rounded"><span class="blackBackground">Portfolio</span></h2>
 
 		<div class="pure-g testC">
@@ -64,7 +66,9 @@
 							<li>Easily extendable with support for hotloading new features on the fly.</li>
 						</ul>
 
-						<a class="pure-button" href="https://github.com/gspetrou/TerrortownTwo" target="_blank"><i class="fab fa-github"></i> View Source</a>
+						<div class="portfolio-projButtons">
+							<a class="pure-button" href="https://github.com/gspetrou/TerrortownTwo" target="_blank"><i class="fab fa-github"></i> View Source</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -74,7 +78,7 @@
 					<div class="portfolio-ProjImgContainer pure-u-1-1 pure-u-sm-1-3"><img class="portfolio-ProjImg pure-img" src="content/pronemod.jpg"></div>
 
 					<div class="portfolio-ProjText pure-u-1-1 pure-u-sm-2-3">
-						<h2 class="portfolio-ProjHeader tk-museo-sans-rounded">The Prone Mod</h2>
+						<h2 class="portfolio-ProjHeader tk-museo-sans-rounded">Prone Mod</h2>
 						<p>A videogame addon that adds crawling capabilities to the game Garry's Mod.</p>
 						<ul>
 							<li>Uses custom player animations and hand-crafted aimlayers for fluid movement.</li>
@@ -83,8 +87,10 @@
 							<li>Multiple versions available to support every gamemode and most popular animation frameworks.</li>
 						</ul>
 
-						<a class="pure-button" href="https://github.com/gspetrou/Prone-Mod" target="_blank"><i class="fab fa-github"></i> View Source</a>
-						<a class="pure-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=775573383" target="_blank"><i class="fab fa-steam"></i> View Storefront</a>
+						<div class="portfolio-projButtons">
+							<a class="pure-button" href="https://github.com/gspetrou/Prone-Mod" target="_blank"><i class="fab fa-github"></i> View Source</a>
+							<a class="pure-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=775573383" target="_blank"><i class="fab fa-steam"></i> View Storefront</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -103,8 +109,10 @@
 							<li>Used concurrently by a quarter million clients!</li>
 						</ul>
 
-						<a class="pure-button" href="https://github.com/gspetrou/smartweld" target="_blank"><i class="fab fa-github"></i> View Source</a>
-						<a class="pure-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=131586620" target="_blank"><i class="fab fa-steam"></i> View Storefront</a>
+						<div class="portfolio-projButtons">
+							<a class="pure-button" href="https://github.com/gspetrou/smartweld" target="_blank"><i class="fab fa-github"></i> View Source</a>
+							<a class="pure-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=131586620" target="_blank"><i class="fab fa-steam"></i> View Storefront</a>
+						</div>
 					</div>
 				</div>
 			</div>
