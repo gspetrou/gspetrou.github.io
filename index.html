@@ -124,6 +124,47 @@
 			<a href="https://steamcommunity.com/id/your-stalker/myworkshopfiles/" target="_blank"><img class="portfolio-Img" src="content/steam.png"></a>
 		</div>
 	</div>
+
+	<div id="contact" class="contact-Container">
+		<h2 class="portfolio-Header tk-museo-sans-rounded"><span class="blackBackground">Contact</span></h2>
+
+		<div class="contact-Info">
+			<ul class="tk-museo-sans-rounded">
+				<li><i class="fas fa-map-pin"></i> New Jersey, USA</li>
+				<li><i class="fas fa-address-book"></i> (732)-882-3687</li>
+				<li><i class="far fa-envelope"></i> George@gpetrou.com</li>
+			</ul>
+		</div>
+
+		<div class="contact-Form">
+			<form class="pure-form pure-form-stacked" action="https://formspree.io/george@gpetrou.com">
+				<fieldset>
+					<div class="pure-g">
+						<div class="contact-NameContainer pure-u-1 pure-u-md-1-2">
+							<label class="tk-museo-sans-rounded" for="name">Full Name</label>
+							<input name="name" id="name" placeholder="Full Name" type="text" class="tk-museo-sans-rounded contact-Name" required>
+						</div>
+
+						<div class="contact-EmailContainer pure-u-1 pure-u-md-1-2">
+							<label class="tk-museo-sans-rounded" for="email">E-Mail</label>
+							<input name="email" id="email" type="email" placeholder="john@doe.com" class="tk-museo-sans-rounded contact-Email" required>
+						</div>
+
+						<div class="pure-u-1">
+							<label class="tk-museo-sans-rounded" for="message">Message</label>
+							<input name="message" id="message" type="text" class="tk-museo-sans-rounded contact-Message" required>
+						</div>
+
+						<button type="submit" value="Send" class="tk-museo-sans-rounded pure-button pure-button-primary contact-Submit">Submit</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');	// Enables smooth scrolling.
+	</script>
 </div>
 </body>
 </html>
