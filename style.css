@@ -83,6 +83,7 @@ body {
 	text-align: center;
 	position: absolute;
 	bottom: 0vh;
+	opacity: 0;
 }
 
 .mainInfo-ScrollText {
@@ -131,11 +132,6 @@ body {
 	padding: .8em;
 	font-size: 2.5em;
 	color: white;
-}
-
-.testC {
-	width: 100%;
-	margin: auto;
 }
 
 .portfolio-Project {
@@ -234,6 +230,39 @@ body {
 .contact-Submit {
 	background-color: black;
 	margin-top: 5px;
+}
+
+/* Footer */
+footer {
+	background-color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-Content {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer-Text {
+	color: #EDE6E3;
+	margin: 0 0 5px 0;
+}
+
+.footer-Link {
+	color: #EDE6E3;
+	margin: 0 0 5px 0;
+	font-size: 1.5em;
+}
+
+.footer-Link i {
+	margin: 0 5px 5px 5px;
+	color: white;
+}
+
+.footer-BackToTop {
+	font-weight: 700;
 }
 
 /* Don't anchor project download links to bottom of project card on smaller screens */
