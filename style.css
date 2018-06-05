@@ -272,8 +272,33 @@ footer {
 	}
 }
 
-/* Small size in Pure, make portfolio section look good on small screens */
+/* Small size in Pure, make home and portfolio section look good on small screens */
 @media only screen and (max-width: 568px) {
+	.mainInfo-Container {
+		height: auto;
+	}
+
+	.mainInfo-Name {
+		font-size: 12.25vw;
+	}
+
+	.mainInfo-TextArea {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.mainInfo-Scroll {
+		position: relative;
+	}
+
+	#mainInfo-ScrollClickable {
+		text-decoration: none;
+	}
+
+	.portfolio-ProjButtonSpacer {
+		margin-bottom: 5px;
+	}
+
 	.portfolio-ProjImg {
 		margin: 0 auto;
 	}
@@ -281,6 +306,12 @@ footer {
 	.portfolio-ProjHeader {
 		margin: 0;
 		padding-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.contact-Info ul {
+		font-size: 1em;
 	}
 }
 
