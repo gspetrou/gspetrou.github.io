@@ -14,17 +14,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<!--<nav>
-		<div class="navMenu pure-menu pure-menu-horizontal pure-menu-fixed">
-			<ul class="pure-menu-list">
-				<li class="pure-menu-item"><a data-scroll href="#home" class="navLink pure-menu-link pure-menu-selected">Home</a></li>
-				<li class="pure-menu-item"><a data-scroll href="#portfolio" class="navLink pure-menu-link">Portfolio</a></li>
-				<li class="pure-menu-item"><a data-scroll href="#contact" class="navLink pure-menu-link">Contact</a></li>
-			</ul>
-		</div>
-	</nav>-->
-
+<body id="body">
 	<div id="home" class="mainInfo-Container">
 		<div class="mainInfo-TextArea">
 			<h1 class="mainInfo-Name tk-museo-sans-rounded"><span class="whiteBackground">George Petrou</span></h1>
@@ -37,18 +27,18 @@
 				<li class="mainInfo-ListLine">I'm currently living in New Jersey.</li>
 				<li class="mainInfo-ListLine">I'm looking to move west.</li>
 				<li class="mainInfo-ListLine">I'm always looking for internships, <a href="#contact">know about one?</a></li>
-				<li class="mainInfo-ListLine">I'm out of phrases that start with I'm, lets switch it up.</li>
-				<li class="mainInfo-ListLine">I've showcased some stuff in the portfolio section, <a href="https://github.com/gspetrou" target="_blank">more on my Github</a>.</li>
-				<li class="mainInfo-ListLine">I've made and sold videogame addons under the alias 'Stalker'.</li>
-				<li class="mainInfo-ListLine">I've been to Cyprus about 12 times, oh and I know Greek.</li>
-				<li class="mainInfo-ListLine">I've made this <a href="George Petrou - Resume.pdf" target="_blank">résumé</a>, why don't you take a look?</li>
+				<li class="mainInfo-ListLine">I've created and sold videogame add-ons under the alias 'Stalker'.</li>
+				<li class="mainInfo-ListLine">I've showcased some stuff in the portfolio section and <a href="https://github.com/gspetrou" target="_blank">more on my Github</a>.</li>
+				<li class="mainInfo-ListLine">I made this <a href="George Petrou - Resume.pdf" target="_blank">résumé</a>, why don't you take a look?</li>
+				<li class="mainInfo-ListLine">I listen to all kinds of Rock, R&B, Indie, and Alternative.</li>
+				<li class="mainInfo-ListLine">I can speak Greek.</li>
 				<li class="mainInfo-ListLine">I want to be one of the best computer dudes out there.</li>
 				<li class="mainInfo-ListLine">I want to work in an environment that can help me achieve this.</li>
 				<li class="mainInfo-ListLine">♫ I want to be the very best, that no-one ever was! ♫</li>
 			</ul>
 		</div>
 
-		<a href="#portfolio" class="mainInfo-ScrollClickable">
+		<a href="#portfolio" id="mainInfo-ScrollClickable">
 			<div class="mainInfo-Scroll">
 				<span class="fadeOnScroll mainInfo-ScrollText">Scroll for more info</span>
 				<div class="fadeOnScroll bounce"><i class="mainInfo-ScrollArrow fas fa-angle-down fa-5x" aria-hidden="true"></i></div>
@@ -59,7 +49,7 @@
 	<div id="portfolio" class="portfolio-Container">
 		<h2 class="portfolio-Header tk-museo-sans-rounded"><span class="blackBackground">Portfolio</span></h2>
 
-		<div class="pure-g testC">
+		<div class="pure-g">
 			<div class="portfolio-Project pure-u-1-1 pure-u-xl-1-2">
 				<div class="pure-g portfolio-ProjPadding">
 					<div class="portfolio-ProjImgContainer pure-u-1-1 pure-u-sm-1-3"><img class="portfolio-ProjImg pure-img" src="content/ttt.jpg"></div>
@@ -91,7 +81,7 @@
 						<ul>
 							<li>Uses custom player animations and hand-crafted aimlayers for fluid movement.</li>
 							<li>Built on peer-reviewed netcode to ensure all hitboxes remain accurate.</li>
-							<li>Runs of an optimized animation handler to ensure little to no frame drops.</li>
+							<li>Runs off an optimized animation handler to ensure little to no frame drops.</li>
 							<li>Multiple versions available to support every gamemode and most popular animation frameworks.</li>
 						</ul>
 
@@ -141,6 +131,7 @@
 				<li><i class="fas fa-map-pin"></i> New Jersey, USA</li>
 				<li><i class="fas fa-address-book"></i> (732)-882-3687</li>
 				<li><i class="far fa-envelope"></i> George@gpetrou.com</li>
+				<li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gspetrou/" target="_blank">linkedin.com/in/gspetrou/</a></li>
 			</ul>
 		</div>
 
@@ -150,7 +141,7 @@
 					<div class="pure-g">
 						<div class="contact-NameContainer pure-u-1 pure-u-md-1-2">
 							<label class="tk-museo-sans-rounded" for="name">Full Name</label>
-							<input name="name" id="name" placeholder="Full Name" type="text" class="tk-museo-sans-rounded contact-Name" required>
+							<input name="name" id="name" placeholder="John Doe" type="text" class="tk-museo-sans-rounded contact-Name" required>
 						</div>
 
 						<div class="contact-EmailContainer pure-u-1 pure-u-md-1-2">
