@@ -17,6 +17,11 @@ body {
 	border-radius: 5px
 }
 
+.contactLink {
+	text-decoration: none;
+	color: inherit;
+}
+
 /* Nav */
 .navMenu {
 	background-color: black;
@@ -33,9 +38,11 @@ body {
 	overflow: hidden;
 	position: relative;
 
-	background-image: url(content/placeholder.png);
-	background-position: 85% 25%;
+	background-image: url(content/);
+	background-attachment: fixed;
+	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .mainInfo-TextArea {
