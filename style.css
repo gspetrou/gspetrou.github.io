@@ -197,14 +197,12 @@ body {
 	margin: 0 auto;
 }
 
-.contact-Info {
-	margin: 0 auto;
-	width: 70%;
-}
-
 .contact-Info ul {
 	list-style-type: none;
 	padding-left: 0px;
+	width: 260px;
+	margin: 0 auto;
+	font-size: 1.3em;
 }
 
 .contact-NameContainer {
