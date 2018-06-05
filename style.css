@@ -7,12 +7,12 @@ body {
 	background-color: gray;
 }
 
-.whiteBackground {
+.mainHeaderBackground {
 	background-color: white;
 	border-radius: 5px
 }
 
-.blackBackground {
+.subHeaderBackground {
 	background-color: black;
 	border-radius: 5px
 }
@@ -270,14 +270,14 @@ footer {
 	font-weight: 700;
 }
 
-/* Don't anchor project download links to bottom of project card on smaller screens */
+/* Don't anchor project download links to bottom of project card on screens smaller than a larger desktop */
 @media only screen and (max-width: 1730px) {
 	.portfolio-projButtons {
 		position: relative;
 	}
 }
 
-/* Small size in Pure, make home and portfolio section look good on small screens */
+/* Small size in Pure */
 @media only screen and (max-width: 568px) {
 	.mainInfo-Container {
 		height: auto;
@@ -300,10 +300,6 @@ footer {
 		text-decoration: none;
 	}
 
-	.portfolio-ProjButtonSpacer {
-		margin-bottom: 5px;
-	}
-
 	.portfolio-ProjImg {
 		margin: 0 auto;
 	}
@@ -314,13 +310,21 @@ footer {
 	}
 }
 
+/* Adjust font size on small screens */
 @media only screen and (max-width: 400px) {
 	.contact-Info ul {
 		font-size: 1em;
 	}
 }
 
-/* Medium size in Pure, make contact text entries look nice. */
+/* Fix source link buttons on real small screens */
+@media only screen and (max-width: 375px) {
+	.portfolio-ProjButtonSpacer {
+		margin-bottom: 5px;
+	}
+}
+
+/* Medium size in Pure */
 @media only screen and (max-width: 768px) {
 	.contact-NameContainer {
 		padding-right: 0;
