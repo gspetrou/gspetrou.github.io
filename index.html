@@ -180,6 +180,11 @@
 		new TweenLite(".mainInfo-Scroll", fadeInTime, {opacity: 1, delay: fadeInAfterTime});
 
 		window.onscroll = function() {
+			// If theyre on mobile don't worry about it.
+			if (window.innerWidth < 568) {
+				return;
+			}
+
 			var newOpacity = 1 - window.scrollY / 500;
 			var fadeElements = document.getElementsByClassName("fadeOnScroll");
 
