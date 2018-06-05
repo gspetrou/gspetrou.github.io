@@ -10,7 +10,7 @@ body {
 .mainHeaderBackground {
 	color: white;
 	background-color: rgba(120, 120, 120, 0.3);
-	border-radius: 5px;
+	border-radius: 5px
 }
 
 .subHeaderBackground {
@@ -39,7 +39,8 @@ body {
 	overflow: hidden;
 	position: relative;
 
-	background-image: url(content/comp_blur.jpg);	/* Blurring the image itself greatly reduces file size */
+	/* Blurring the image itself greatly reduces file size versus using a filter */
+	background-image: url(content/comp_blur.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -64,7 +65,7 @@ body {
 .mainInfo-List {
 	padding: 0;
 	line-height: 1.5em;
-	list-style: none outside none;
+	list-style-type: none;
 	position: relative;
 }
 
@@ -202,12 +203,12 @@ body {
 	padding-left: 10%;
 	padding-right: 10%;
 	margin: 0 auto;
-
+/*
 	background-image: url(content/night2.svg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
 }
 
 .contact-Info ul {
