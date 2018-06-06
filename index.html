@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="Cache-control" content="max-age=604800">
 
 	<title>George Petrou</title>
 
@@ -12,6 +11,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 	<link rel="stylesheet" href="https://use.typekit.net/osn5qmp.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 
 	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
@@ -24,21 +24,21 @@
 			<h1 class="mainInfo-Name tk-museo-sans-rounded"><span class="mainHeaderBackground">George Petrou</span></h1>
 
 			<ul class="mainInfo-List tk-museo-sans-rounded">
-				<li class="mainInfo-ListLine">I'm a student at the Pennsylvania State University.</li>
-				<li class="mainInfo-ListLine">I'm studying Computer Engineering.</li>
-				<li class="mainInfo-ListLine">I'm part of the class of 2020.</li>
-				<li class="mainInfo-ListLine">I'm a founding father of a fraternity.</li>
-				<li class="mainInfo-ListLine">I'm currently living in New Jersey.</li>
-				<li class="mainInfo-ListLine">I'm looking to move west.</li>
-				<li class="mainInfo-ListLine">I'm always looking for internships, <a href="#contact">know about one?</a></li>
-				<li class="mainInfo-ListLine">I've created and sold videogame add-ons under the alias 'Stalker'.</li>
-				<li class="mainInfo-ListLine">I've showcased some stuff in the portfolio section and <a href="https://github.com/gspetrou" target="_blank">more on my Github</a>.</li>
-				<li class="mainInfo-ListLine">I made this <a href="George Petrou - Resume.pdf" target="_blank">résumé</a>, why don't you take a look?</li>
-				<li class="mainInfo-ListLine">I listen to all kinds of Rock, R&B, Indie, and Alternative.</li>
-				<li class="mainInfo-ListLine">I can speak Greek.</li>
-				<li class="mainInfo-ListLine">I want to be one of the best computer dudes out there.</li>
-				<li class="mainInfo-ListLine">I want to work in an environment that can help me achieve this.</li>
-				<li class="mainInfo-ListLine">♫ I want to be the very best, that no-one ever was! ♫</li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I'm a student at the Pennsylvania State University.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I'm studying Computer Engineering.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I'm part of the class of 2020.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I'm a founding father of a fraternity.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I'm currently living in New Jersey.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I'm looking to move west.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I'm always looking for internships, <a href="#contact">know about one?</a></span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I've created and sold videogame add-ons under the alias 'Stalker'.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I've showcased some stuff in the portfolio section and <a href="https://github.com/gspetrou" target="_blank">more on my Github</a>.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I made this <a href="George Petrou - Resume.pdf" target="_blank">résumé</a>, why don't you take a look?</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I listen to all kinds of Rock, R&B, Indie, and Alternative.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I can speak Greek.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I want to be one of the best computer dudes out there.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">I want to work in an environment that can help me achieve this.</span></li>
+				<li class="mainInfo-ListLine"><span class="mainInfo-LineBG">♫ I want to be the very best, that no-one ever was! ♫</span></li>
 			</ul>
 		</div>
 
@@ -185,6 +185,24 @@
 		var fadeInTime = 2;			// Time in sec of how long it takes to fade in the arrow.
 
 		new TweenLite(".mainInfo-Scroll", fadeInTime, {opacity: 1, delay: fadeInAfterTime});	// Fade in "scroll down for more info" after fadeInAfterTime seconds.
+
+		window.onload = function() {
+			new TweenLite(".mainInfo-ListLine", 1, {opacity: 1, delay: 1});
+			var slideIn = document.getElementsByClassName("mainInfo-ListLine");
+			var i = 0;
+			function timedLoopSlideIn() {
+				setTimeout(function() {
+					slideIn[i].className += " animated slideInLeft";
+					i++;
+
+					if (i < slideIn.length) {
+						timedLoopSlideIn();
+					}
+				}, 10)
+			}
+
+			timedLoopSlideIn();
+		}
 
 		// Fade out "scroll down for more info" more and more as we scroll down till the point that it is no longer clickable.
 		window.onscroll = function() {
