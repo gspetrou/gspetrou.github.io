@@ -132,6 +132,33 @@ body {
 	animation: bounce 1.5s infinite;
 }
 
+/* About Me */
+.aboutMe {
+	width: 80%;
+	max-width: 1000px;
+	margin: 10px auto;
+}
+
+.aboutMe-ImgDesc {
+
+}
+
+.aboutMe-ImgContainer {
+
+}
+
+.aboutMe-Img {
+
+}
+
+.aboutMe-DescContainer {
+
+}
+
+.aboutMe-Desc {
+	margin: 0;
+	font-size: 1.05em;
+}
 
 /* Portfolio */
 .portfolio-Container {
