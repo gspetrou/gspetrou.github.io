@@ -145,6 +145,12 @@ body {
 	font-size: 2.5em;
 }
 
+.portfolio-Header span {
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+
 .portfolio-Project {
 	padding: 0 10px 10px 10px;
 }
@@ -208,6 +214,11 @@ body {
 	padding-right: 10%;
 	margin: 0 auto;
 	background-color: #5BACC7;
+	background-image: url(content/gradient.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .contact-Info ul {
