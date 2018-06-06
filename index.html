@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 	<link rel="stylesheet" href="https://use.typekit.net/osn5qmp.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 
 	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
@@ -185,24 +184,6 @@
 		var fadeInTime = 2;			// Time in sec of how long it takes to fade in the arrow.
 
 		new TweenLite(".mainInfo-Scroll", fadeInTime, {opacity: 1, delay: fadeInAfterTime});	// Fade in "scroll down for more info" after fadeInAfterTime seconds.
-
-		window.onload = function() {
-			new TweenLite(".mainInfo-ListLine", 1, {opacity: 1, delay: 1});
-			var slideIn = document.getElementsByClassName("mainInfo-ListLine");
-			var i = 0;
-			function timedLoopSlideIn() {
-				setTimeout(function() {
-					slideIn[i].className += " animated slideInLeft";
-					i++;
-
-					if (i < slideIn.length) {
-						timedLoopSlideIn();
-					}
-				}, 10)
-			}
-
-			timedLoopSlideIn();
-		}
 
 		// Fade out "scroll down for more info" more and more as we scroll down till the point that it is no longer clickable.
 		window.onscroll = function() {
