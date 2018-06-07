@@ -262,13 +262,14 @@ body {
 
 /* Portfolio */
 .portfolio-Container {
+	padding-top: 15px;
 	background-color: white;
 }
 
 .portfolio-Header {
 	text-align: center;
 	margin: 0;
-	padding: .8em;
+	padding: 0 .8em .8em .8em;
 	font-size: 2.5em;
 }
 
@@ -397,6 +398,19 @@ body {
 	background-size: cover;
 }
 
+.contact-Header {
+	text-align: center;
+	margin: 0;
+	padding: 15px 0;
+	font-size: 2.5em;
+}
+
+.contact-Header span {
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+
 .contact-Info ul {
 	list-style-type: none;
 	padding-left: 0px;
@@ -501,6 +515,8 @@ footer {
 		margin: 0;
 		padding-top: 10px;
 	}
+
+
 }
 
 /* Adjust font size on small screens */
