@@ -1,4 +1,4 @@
-/* General CSS */
+/* General */
 * {
 	box-sizing: border-box;
 }
@@ -7,31 +7,24 @@ body {
 	background-color: gray;
 }
 
-.mainHeaderBackground {
-	color: white;
-	background-color: rgba(120, 120, 120, 0.3);
-	border-radius: 5px
-}
-
-.subHeaderBackground {
-	color: white;
-	background-color: black;
-	border-radius: 5px
-}
-
 .contactLink {
 	text-decoration: none;
 	color: inherit;
 }
 
-/* Nav */
-.navMenu {
+.backgroundFixed {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.roundedHeaderText {
+	border-radius: 5px;
+	color: white;
 	background-color: black;
 }
 
-.navLink {
-	color: white;
-}
 
 /* Top Area */
 .mainInfo-Container {
@@ -41,10 +34,6 @@ body {
 
 	/* Blurring the image itself greatly reduces file size versus using a filter */
 	background-image: url(content/comp_blur.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .mainInfo-TextArea {
@@ -60,6 +49,10 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 4em;
+}
+
+.mainInfo-Name span {
+	background-color: rgba(120, 120, 120, 0.3);
 }
 
 .mainInfo-List {
@@ -84,10 +77,6 @@ body {
 	color: white;
 	font-size: 1em;
 	font-weight: 500;
-}
-
-.mainInfo-LineBG {
-	/* Use later */
 }
 
 .mainInfo-Scroll {
@@ -151,16 +140,6 @@ body {
 	margin: 0;
 	padding: 0 .8em .8em .8em;
 	font-size: 2.5em;
-}
-
-.aboutMe-Header span {
-	background-color: black;
-	color: white;
-	border-radius: 5px;
-}
-
-.aboutMe-ImgDesc {
-
 }
 
 .aboutMe-ImgContainer {
@@ -273,12 +252,6 @@ body {
 	font-size: 2.5em;
 }
 
-.portfolio-Header span {
-	background-color: black;
-	color: white;
-	border-radius: 5px;
-}
-
 .portfolio-Project {
 	padding: 0 10px 10px 10px;
 }
@@ -336,53 +309,27 @@ body {
 	height: 60px;
 }
 
+
 /* Spacers */
-.spacer1 {
+.spacer {
+	height: 300px;
+}
+
+.spacer h2 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 300px;
+	font-size: 3em;
+}
+
+.spacer-Skills {
 	background-image: url(content/bg1.png);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 300px;
 }
 
-.spacer1-Header {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 300px;
-	font-size: 3em;
-	color: white;
-}
-
-.spacer1-HeaderText {
-	background-color: black;
-	border-radius: 5px;
-}
-
-.spacer2 {
+.spacer-Portfolio {
 	background-image: url(content/bg2.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 300px;
-}
-
-.spacer2-Header {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 300px;
-	font-size: 3em;
-	color: white;
-}
-
-.spacer2-HeaderText {
-	background-color: black;
-	border-radius: 5px;
 }
 
 /* Contact Section */
@@ -392,10 +339,6 @@ body {
 	margin: 0 auto;
 	background-color: #5BACC7;
 	background-image: url(content/gradient.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .contact-Header {
@@ -403,12 +346,6 @@ body {
 	margin: 0;
 	padding: 15px 0;
 	font-size: 2.5em;
-}
-
-.contact-Header span {
-	background-color: black;
-	color: white;
-	border-radius: 5px;
 }
 
 .contact-Info ul {
@@ -423,20 +360,12 @@ body {
 	padding-right: 5px;
 }
 
-.contact-Name {
+.contact-InputBar {
 	width: 100%;
 }
 
 .contact-EmailContainer {
 	padding-left: 5px;
-}
-
-.contact-Email {
-	width: 100%;
-}
-
-.contact-Message {
-	width: 100%;
 }
 
 .contact-Submit {
@@ -477,10 +406,48 @@ footer {
 	font-weight: 700;
 }
 
-/* Don't anchor project download links to bottom of project card on screens smaller than a larger desktop */
+/* Don't anchor project download links to bottom of project card on screens smaller than you're average desktop monitor */
 @media only screen and (max-width: 1730px) {
 	.portfolio-projButtons {
 		position: relative;
+	}
+}
+
+/* Adjust font size of contact info for small screens */
+@media only screen and (max-width: 400px) {
+	.contact-Info ul {
+		font-size: 1em;
+	}
+}
+
+/* Fix source link buttons on really small screens */
+@media only screen and (max-width: 375px) {
+	.portfolio-ProjButtonSpacer {
+		margin-bottom: 5px;
+	}
+}
+
+/* Large size in Pure */
+@media only screen and (max-width: 1024px) {
+	.skills-List {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+/* Medium size in Pure */
+@media only screen and (max-width: 768px) {
+	.contact-NameContainer {
+		padding-right: 0;
+	}
+
+	.contact-EmailContainer {
+		padding-left: 0;
+	}
+
+	.aboutMe-ImgContainer {
+		text-align: center;
+		padding: 0 0 10px 0;
 	}
 }
 
@@ -514,47 +481,5 @@ footer {
 	.portfolio-ProjHeader {
 		margin: 0;
 		padding-top: 10px;
-	}
-
-
-}
-
-/* Adjust font size on small screens */
-@media only screen and (max-width: 400px) {
-	.contact-Info ul {
-		font-size: 1em;
-	}
-}
-
-/* Fix source link buttons on real small screens */
-@media only screen and (max-width: 375px) {
-	.portfolio-ProjButtonSpacer {
-		margin-bottom: 5px;
-	}
-}
-
-/* Medium size in Pure */
-@media only screen and (max-width: 768px) {
-	.contact-NameContainer {
-		padding-right: 0;
-	}
-
-	.contact-EmailContainer {
-		padding-left: 0;
-	}
-
-	.aboutMe-ImgContainer {
-		text-align: center;
-		padding: 0 0 10px 0;
-	}
-
-	
-}
-
-/* Large size in Pure */
-@media only screen and (max-width: 1024px) {
-	.skills-List {
-		width: 90%;
-		margin: 0 auto;
 	}
 }
