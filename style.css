@@ -235,6 +235,55 @@ body {
 	height: 60px;
 }
 
+/* Spacers */
+.spacer1 {
+	background-image: url(content/bg1.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+}
+
+.spacer1-Header {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 300px;
+	font-size: 3em;
+	color: white;
+}
+
+.spacer1-HeaderText {
+	background-color: black;
+	border-radius: 5px;
+}
+
+.spacer2 {
+	background-image: url(content/bg2.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+}
+
+.spacer2-Header {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 300px;
+	font-size: 3em;
+	color: white;
+}
+
+.spacer2-HeaderText {
+	background-color: black;
+	border-radius: 5px;
+}
+
 /* Contact Section */
 .contact-Container {
 	padding-left: 10%;
