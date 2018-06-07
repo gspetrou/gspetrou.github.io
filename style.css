@@ -186,7 +186,79 @@ body {
 	padding-bottom: 15px;
 }
 
+.skills-List {
+	width: 65%;
+	margin: 0 auto;
 }
+
+.skills-SkillLabel:nth-Child(1) {
+	margin-top: 0;
+}
+
+.skills {
+	white-space: nowrap;
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+@keyframes barOne {
+	from {width: 0%;}
+	to {width: 95%;}
+}
+
+.barOne {
+	-moz-animation: barOne 1.5s ease;
+	-webkit-animation: barOne 1.5s ease;
+	animation: barOne 1.5s ease;
+
+	width: 95%;
+	background-color: #4CAF50;
+}
+
+@keyframes barTwo {
+	from {width: 0%;}
+	to {width: 75%;}
+}
+
+.barTwo {
+	-moz-animation: barTwo 1.5s ease;
+	-webkit-animation: barTwo 1.5s ease;
+	animation: barTwo 1.5s ease;
+
+	width: 75%;
+	background-color: #2196F3;
+}
+
+@keyframes barThree {
+	from {width: 0%;}
+	to {width: 50%;}
+}
+
+.barThree {
+	-moz-animation: barThree 1.5s ease;
+	-webkit-animation: barThree 1.5s ease;
+	animation: barThree 1.5s ease;
+
+	width: 50%;
+	background-color: #f44336;
+}
+
+@keyframes barFour {
+	from {width: 0%;}
+	to {width: 35%;}
+}
+
+.barFour {
+	-moz-animation: barFour 1.5s ease;
+	-webkit-animation: barFour 1.5s ease;
+	animation: barFour 1.5s ease;
+
+	width: 35%;
+	background-color: #808080;
+}
+
 
 /* Portfolio */
 .portfolio-Container {
@@ -453,5 +525,20 @@ footer {
 
 	.contact-EmailContainer {
 		padding-left: 0;
+	}
+
+	.aboutMe-ImgContainer {
+		text-align: center;
+		padding: 0 0 10px 0;
+	}
+
+	
+}
+
+/* Large size in Pure */
+@media only screen and (max-width: 1024px) {
+	.skills-List {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
