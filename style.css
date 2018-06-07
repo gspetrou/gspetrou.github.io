@@ -133,10 +133,30 @@ body {
 }
 
 /* About Me */
+.aboutMe-Container {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
 .aboutMe {
 	width: 80%;
 	max-width: 1000px;
-	margin: 10px auto;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+.aboutMe-Header {
+	text-align: center;
+	margin: 0;
+	padding: 0 .8em .8em .8em;
+	font-size: 2.5em;
+}
+
+.aboutMe-Header span {
+	background-color: black;
+	color: white;
+	border-radius: 5px;
 }
 
 .aboutMe-ImgDesc {
@@ -144,20 +164,28 @@ body {
 }
 
 .aboutMe-ImgContainer {
-
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .aboutMe-Img {
-
+	display: inline-block !important;
 }
 
 .aboutMe-DescContainer {
-
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
-.aboutMe-Desc {
-	margin: 0;
-	font-size: 1.05em;
+
+/* Skills */
+.skills-Container {
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
 }
 
 /* Portfolio */
