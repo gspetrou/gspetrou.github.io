@@ -157,6 +157,10 @@ body {
 	padding-left: 10px;
 }
 
+.aboutMe-Desc {
+	margin: 0;
+}
+
 
 /* Skills */
 .skills-Container {
@@ -458,7 +462,7 @@ footer {
 	}
 
 	.mainInfo-Name {
-		font-size: 12.25vw;
+		font-size: 12.23vw;
 	}
 
 	.mainInfo-TextArea {
@@ -486,5 +490,26 @@ footer {
 	/* Sadly fixed attachements dont work on mobile */
 	.backgroundFixed {
 		background-attachment: scroll;
+	}
+
+	/* Workaround to prevent cut off text on skills */
+	.skills span {
+		display: none;
+	}
+
+	#skill-Master:after {
+		content: "95%";
+	}
+
+	#skill-Proficient:after {
+		content: "75%";
+	}
+
+	#skill-Intermediate:after {
+		content: "50%";
+	}
+
+	#skill-Beginner:after {
+		content: "35%";
 	}
 }
