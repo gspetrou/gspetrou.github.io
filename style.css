@@ -67,6 +67,10 @@ body {
 	text-decoration: none;
 }
 
+.mainInfo-List a:hover {
+	color: #B0E9F7;
+}
+
 .mainInfo-ListLine:before {
 	color: white;
 	content: "— ";
@@ -168,6 +172,10 @@ body {
 
 .aboutMe-Desc {
 	margin: 0;
+}
+
+.aboutMe-Link:hover {
+	color: #B0E9F7;
 }
 
 
@@ -386,9 +394,17 @@ body {
 	padding-left: 5px;
 }
 
+.contact-Info a:hover {
+	color: gray;
+}
+
 .contact-Submit {
 	background-color: black;
 	margin-top: 5px;
+}
+
+.contact-Submit:hover {
+	background-color: grey;
 }
 
 /* Footer */
@@ -409,15 +425,16 @@ footer {
 	margin: 0 0 5px 0;
 }
 
-.footer-Link {
-	color: #EDE6E3;
-	margin: 0 0 5px 0;
-	font-size: 1.5em;
+.footer-Text a:hover {
+	color: gray;
 }
 
-.footer-Link i {
-	margin: 0 5px 5px 5px;
-	color: white;
+.footer-ImgLink:nth-Child(1) {
+	padding-right: 5px;
+}
+
+.footer-ImgLink:nth-Child(2) {
+	padding-left: 5px;
 }
 
 .footer-BackToTop {
