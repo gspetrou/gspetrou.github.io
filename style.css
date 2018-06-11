@@ -430,6 +430,10 @@ footer {
 	color: gray;
 }
 
+.footer-Imgs {
+	font-size: 1.25em;
+}
+
 .footer-ImgLink:nth-Child(1) {
 	padding-right: 5px;
 }
