@@ -12,6 +12,7 @@ body {
 	color: inherit;
 }
 
+/* Thanks Raj... */
 .backgroundFixed {
 	background-attachment: fixed;
 	background-position: center;
