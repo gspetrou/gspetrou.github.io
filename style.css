@@ -424,6 +424,7 @@ footer {
 .footer-Text {
 	color: #EDE6E3;
 	margin: 0 0 5px 0;
+	font-size: 0.83em;
 }
 
 .footer-Text a:hover {
