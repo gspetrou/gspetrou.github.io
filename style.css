@@ -12,7 +12,6 @@ body {
 	color: inherit;
 }
 
-/* Thanks Raj... */
 .backgroundFixed {
 	background-attachment: fixed;
 	background-position: center;
@@ -24,6 +23,7 @@ body {
 	border-radius: 5px;
 	color: white;
 	background-color: black;
+	padding: 0 10px 0 10px;
 }
 
 
@@ -66,6 +66,12 @@ body {
 .mainInfo-List a {
 	color: #53D0EF;
 	text-decoration: none;
+	animation: linkGlow 6s infinite; 
+}
+
+@keyframes linkGlow{
+	0%, 100% {color: #53D0EF;}
+	50% {color: #ff5700;}
 }
 
 .mainInfo-List a:hover {
@@ -462,6 +468,12 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 520px) {
+	.mainInfo-Name span {
+		font-size: 0.7em;
+	}
+}
+
 /* Fix source link buttons on really small screens */
 @media only screen and (max-width: 375px) {
 	.portfolio-ProjButtonSpacer {
@@ -497,10 +509,6 @@ footer {
 @media only screen and (max-width: 568px) {
 	.mainInfo-Container {
 		height: auto;
-	}
-
-	.mainInfo-Name {
-		font-size: 12.23vw;
 	}
 
 	.mainInfo-TextArea {
