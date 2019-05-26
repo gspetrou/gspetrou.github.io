@@ -88,3 +88,46 @@ h1 span {
 		font-size: 10vw;
 	}
 }
+
+/* Blogs */
+.blogContainer {
+	width: 50%;
+	margin: 0 auto;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	color: white;
+}
+
+.blogPost {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.blogPost h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 2em;
+	margin: 0;
+}
+
+.blogPost h5 {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: .75em;
+	margin: 0;
+}
+
+.blogPost p {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-size: .95em;
+	font-family: 'Noto Serif', serif;
+}
