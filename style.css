@@ -34,7 +34,7 @@ h1 span {
 
 
 .neon {
-	font-family: neon;
+	font-family: 'Pacifico', cursive;
 	color: #FB4264;
 	font-size: 2em;
 	padding-top: 20px;
@@ -76,22 +76,12 @@ h1 span {
 
 .buttonHolder {
 	text-align: center;
-	margin-top: 90px;
-}
-
-@media only screen and (max-width: 800px) {
-	.frontContent {
-		width: 97.5%;
-	}
-
-	h1 {
-		font-size: 10vw;
-	}
+	margin-top: 52px;
 }
 
 /* Blogs */
 .blogContainer {
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -111,6 +101,7 @@ h2 {
 	border-radius: 5px;
 }
 
+/* Blog titles */
 .blogPost h3 {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
@@ -118,16 +109,50 @@ h2 {
 	margin: 0;
 }
 
+/* Blog sub titles */
+.blogPost h4 {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 1.1em;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.blogPost h4.firstSubtitle {
+	padding-top: 0px;
+}
+
+/* Post date */
 .blogPost h5 {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
 	font-size: .75em;
 	margin: 0;
+	margin-bottom: 10px;
 }
 
 .blogPost p {
-	margin-top: 10px;
-	margin-bottom: 0;
+	margin: 0;
 	font-size: .95em;
 	font-family: 'Noto Serif', serif;
+}
+
+@media only screen and (max-width: 1200px) {
+	.blogContainer {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.frontContent {
+		width: 97.5%;
+	}
+
+	h1 {
+		font-size: 9vw;
+	}
+
+	.blogContainer {
+		width: 80%;
+	}
 }
