@@ -84,11 +84,6 @@ p {
 
 @media only screen and (max-width: 600px) {
 	.mainInfo-Name {
-		width: 100%;
-		font-size: 100%;
-	}
-
-	.mainInfo-Name {
 		/* Hooray, magic numbers! */
 		font-size: 11.3vw;
 	}
