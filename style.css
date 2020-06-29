@@ -92,4 +92,8 @@ p {
 		/* Hooray, magic numbers! */
 		font-size: 11.3vw;
 	}
+
+	.roundedHeaderText {
+		padding: 0 5px;
+	}
 }
